@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
@@ -47,11 +47,13 @@ class App extends StatelessWidget {
               const SizedBox(
                 height: 120,
               ),
-              Text(
-                'Total Balance',
-                style: TextStyle(
-                  fontSize: 22,
-                  color: Colors.white.withOpacity(0.8),
+              Container(
+                child: Text(
+                  'Total Balance',
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.white.withOpacity(0.8),
+                  ),
                 ),
               ),
               const SizedBox(
